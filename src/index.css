@@ -19,7 +19,7 @@ All colors MUST be HSL.
     
     /* Gradient definitions */
     --gradient-night-sky: linear-gradient(135deg, hsl(var(--night-dark)) 0%, hsl(var(--night-mid)) 40%, hsl(var(--night-bright)) 100%);
-    --text-glow-shadow: 0 0 20px hsl(var(--clock-glow) / 0.6), 0 0 40px hsl(var(--clock-glow) / 0.4), 0 0 60px hsl(var(--clock-glow) / 0.2);
+    --text-glow-shadow: 0 0 10px hsl(var(--clock-glow) / 0.3), 0 0 20px hsl(var(--clock-glow) / 0.2), 0 0 30px hsl(var(--clock-glow) / 0.1);
     
     /* Animation */
     --transition-glow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

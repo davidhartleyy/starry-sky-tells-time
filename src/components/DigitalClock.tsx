@@ -52,26 +52,16 @@ const DigitalClock = () => {
       <div className="text-center z-10 px-4">
         {/* Main Clock */}
         <div 
-          className="text-8xl md:text-9xl lg:text-[12rem] font-extrabold text-white mb-6 font-inter transition-all duration-300"
+          className="text-[98px] md:text-[131px] lg:text-[196px] font-extrabold text-white mb-6 font-inter transition-all duration-300"
           style={{ 
             textShadow: 'var(--text-glow-shadow)',
-            filter: 'drop-shadow(0 0 30px rgba(135, 206, 235, 0.3))',
+            filter: 'drop-shadow(0 0 15px rgba(135, 206, 235, 0.15))',
             letterSpacing: '-20%'
           }}
         >
           {formatTime(time)}
         </div>
 
-
-        {/* Subtle pulsing dot for seconds */}
-        <div className="flex justify-center mt-8">
-          <div 
-            className="w-3 h-3 bg-clock-glow rounded-full animate-pulse"
-            style={{ 
-              boxShadow: '0 0 15px hsl(var(--clock-glow) / 0.8)' 
-            }}
-          />
-        </div>
       </div>
     </div>
   );
