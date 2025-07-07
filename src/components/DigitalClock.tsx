@@ -62,15 +62,6 @@ const DigitalClock = () => {
           {formatTime(time)}
         </div>
 
-        {/* Date */}
-        <div className="text-xl md:text-2xl text-clock-glow mb-4 font-light tracking-wide">
-          {formatDate(time)}
-        </div>
-
-        {/* Timezone */}
-        <div className="text-lg text-white/70 font-light">
-          {getTimezone()}
-        </div>
 
         {/* Subtle pulsing dot for seconds */}
         <div className="flex justify-center mt-8">
