@@ -10,6 +10,19 @@ All colors MUST be HSL.
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* Night Sky Gradient Colors */
+    --night-dark: 220 25% 8%;
+    --night-mid: 215 40% 15%;
+    --night-bright: 200 85% 45%;
+    --clock-glow: 200 100% 85%;
+    
+    /* Gradient definitions */
+    --gradient-night-sky: linear-gradient(135deg, hsl(var(--night-dark)) 0%, hsl(var(--night-mid)) 40%, hsl(var(--night-bright)) 100%);
+    --text-glow-shadow: 0 0 20px hsl(var(--clock-glow) / 0.6), 0 0 40px hsl(var(--clock-glow) / 0.4), 0 0 60px hsl(var(--clock-glow) / 0.2);
+    
+    /* Animation */
+    --transition-glow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;

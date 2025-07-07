@@ -24,6 +24,10 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'night-dark': 'hsl(var(--night-dark))',
+				'night-mid': 'hsl(var(--night-mid))',
+				'night-bright': 'hsl(var(--night-bright))',
+				'clock-glow': 'hsl(var(--clock-glow))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
