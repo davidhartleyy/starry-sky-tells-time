@@ -71,7 +71,7 @@ const DigitalClock = () => {
           style={{ 
             textShadow: 'var(--text-glow-shadow)',
             filter: 'drop-shadow(0 0 30px rgba(135, 206, 235, 0.3))',
-            letterSpacing: '-5%'
+            letterSpacing: '-10%'
           }}
         >
           {formatTime(time)}
