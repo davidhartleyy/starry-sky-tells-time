@@ -67,11 +67,11 @@ const DigitalClock = () => {
       <div className="text-center z-10 px-4">
         {/* Main Clock */}
         <div 
-          className="text-8xl md:text-9xl lg:text-[12rem] font-bold text-white mb-6 font-inter transition-all duration-300"
+          className="text-8xl md:text-9xl lg:text-[12rem] font-extrabold text-white mb-6 font-inter transition-all duration-300"
           style={{ 
             textShadow: 'var(--text-glow-shadow)',
             filter: 'drop-shadow(0 0 30px rgba(135, 206, 235, 0.3))',
-            letterSpacing: '-10%'
+            letterSpacing: '-15%'
           }}
         >
           {formatTime(time)}
