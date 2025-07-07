@@ -100,10 +100,26 @@
             clockElement.textContent = formatTime(now);
         }
         
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen().catch(err => {
+                    console.log(`Error attempting to exit fullscreen: ${err.message}`);
+                });
+            }
+        }
+        
         function init() {
             mounted = true;
             const container = document.querySelector('.clock-container');
             container.classList.remove('loading');
+            
+            // Add click event for fullscreen
+            container.addEventListener('click', toggleFullscreen);
+            container.style.cursor = 'pointer';
             
             updateClock();
             setInterval(updateClock, 1000);
