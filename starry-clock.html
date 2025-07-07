@@ -74,6 +74,38 @@
         .loading .clock-time::before {
             content: '--:--';
         }
+        
+        .fullscreen-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            z-index: 20;
+        }
+        
+        .fullscreen-icon:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+        
+        .fullscreen-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +113,12 @@
         <div class="clock-display">
             <div id="clock" class="clock-time">--:--</div>
         </div>
+    </div>
+
+    <div class="fullscreen-icon" onclick="toggleFullscreen()" title="Click to toggle fullscreen">
+        <svg viewBox="0 0 24 24">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+        </svg>
     </div>
 
     <script>
