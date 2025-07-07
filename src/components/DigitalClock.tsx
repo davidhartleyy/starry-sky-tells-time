@@ -47,7 +47,7 @@ const DigitalClock = () => {
   }
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden" style={{ background: 'var(--gradient-night-sky)' }}>
+    <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden" style={{ backgroundImage: 'url(/lovable-uploads/7341bf56-389c-470a-8957-74d490f2aed4.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Animated stars background */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(50)].map((_, i) => (
